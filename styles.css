@@ -131,14 +131,14 @@ main {
     margin: 0;
     text-align: center;
     padding-top: 0;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     border-top: 2px solid #dcdcdc;
     box-sizing: border-box;
     position: static;
     bottom: 0;
     left: 0;
     z-index: 1000;
-    height: 80px;
+    height: 100px;
 }
 
 .footer a {
