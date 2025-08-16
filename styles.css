@@ -88,6 +88,13 @@ body {
     font-weight: var(--font-normal);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+}
+
+.header, .footer {
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
 }
 
 /* Clean, Professional Header */
