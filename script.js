@@ -2,40 +2,38 @@
 
 document.addEventListener('DOMContentLoaded', function () {
     loadComponents();
+    setTimeout(setActiveNavLink, 0); // Ensure active class is set after header loads
     initPage();
 });
 
 function loadComponents() {
     const headerPlaceholder = document.getElementById('header-placeholder');
-    const footerPlaceholder = document.getElementById('footer-placeholder');
 
     // Load header dynamically without a container
     headerPlaceholder.innerHTML = `
         <header class="header">
             <h1>Arfan Rasheed</h1>
             <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="projects.html">Projects</a>
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="projects.html" class="nav-link">Projects</a>
             </nav>
         </header>
     `;
+}
 
-    // Load footer dynamically
-    footerPlaceholder.innerHTML = `
-        <footer class="footer">
-            <p>
-                <a href="https://linkedin.com/in/arfan-rasheed-7197b32a2" target="_blank" rel="noopener noreferrer">
-                    <img src="linkedin-logo.png" alt="LinkedIn Logo" class="social-logo"> LinkedIn
-                </a>
-            </p>
-            <p>
-                <a href="https://github.com/ArfanRasheed" target="_blank" rel="noopener noreferrer">
-                    <img src="github-logo.png" alt="GitHub Logo" class="social-logo"> GitHub
-                </a>
-            </p>
-        </footer>
-    `;
+function setActiveNavLink() {
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    const navLinks = document.querySelectorAll('.nav-link');
+    
+    navLinks.forEach(link => {
+        const href = link.getAttribute('href');
+        if (href === currentPage) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
+    });
 }
 
 function initPage() {
