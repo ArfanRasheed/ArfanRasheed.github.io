@@ -16,7 +16,8 @@ function loadComponents() {
             <nav>
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="about.html" class="nav-link">About</a>
-                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="data-projects.html" class="nav-link">Data Analysis</a>
+                <a href="projects.html" class="nav-link">Development</a>
             </nav>
         </header>
     `;

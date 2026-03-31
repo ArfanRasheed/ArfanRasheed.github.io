@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analysis - Arfan Rasheed</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <style>
+        .embed-container {
+            width: 100%;
+            overflow-x: auto;
+            margin: var(--space-4) 0;
+            border: 1px solid hsl(var(--border));
+            border-radius: var(--radius);
+        }
+        .tableauPlaceholder {
+            min-width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+    <main>
+        <div class="container content">
+            <h1>Data Analysis</h1>
+            <p>The source code for the projects detailed on this page is available in my <a href="https://github.com/ArfanRasheed/Projects/tree/main/Analyst%20Projects" target="_blank" rel="noopener noreferrer">GitHub repository</a>. Each project represents a real-world data problem worked through from raw data to actionable insight.</p>
+
+            <section>
+                <h2>S&P 500 Financial Analysis</h2>
+                <p>In this project, I analyzed S&P 500 financial data to surface performance trends, sector comparisons, and key market indicators using Tableau. The dashboard provides an interactive view of market performance, allowing exploration across dimensions including sector breakdowns, historical trends, and relative stock performance. Building this project strengthened my skills in visual storytelling with data and designing dashboards that communicate findings clearly to both technical and non-technical audiences.</p>
+                <div class="embed-container">
+                    <div class='tableauPlaceholder' id='viz1774387302723' style='position: relative'>
+                        <noscript>
+                            <a href='#'><img alt=' ' src='https://public.tableau.com/static/images/SP/SP500FinancialAnalysis/SP500FinancialAnalysisPerformance/1_rss.png' style='border: none' /></a>
+                        </noscript>
+                        <object class='tableauViz' style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='SP500FinancialAnalysis/SP500FinancialAnalysisPerformance' />
+                            <param name='tabs' value='yes' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image' value='https://public.tableau.com/static/images/SP/SP500FinancialAnalysis/SP500FinancialAnalysisPerformance/1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='en-US' />
+                        </object>
+                    </div>
+                    <script type='text/javascript'>
+                        var divElement = document.getElementById('viz1774387302723');
+                        var vizElement = divElement.getElementsByTagName('object')[0];
+                        vizElement.style.width = '100%';
+                        vizElement.style.height = Math.round(divElement.offsetWidth * 0.7) + 'px';
+                        var scriptElement = document.createElement('script');
+                        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                    </script>
+                </div>
+            </section>
+
+            <section>
+                <h2>Credit Card Transaction Analysis</h2>
+                <p>In this project, I analyzed 555,719 real credit card transactions to surface customer spending behavior, merchant category performance, geographic revenue distribution, and month-over-month financial trends. I wrote advanced SQL queries using window functions, CTEs, correlated subqueries, and ROLLUP aggregation to extract meaningful patterns from large-scale transactional data directly applicable to banking, finance, and business needs. I also produced executive-level financial summaries segmenting customers by lifetime value, reinforcing how to frame technical findings for a business audience.</p>
+            </section>
+
+            <section>
+                <h2>NYC 311 Service Request Dashboard</h2>
+                <p>For this project, I cleaned and restructured over 4 million NYC 311 service requests, engineering resolution time metrics and time-based features to enable performance analysis across all 5 boroughs. The scale of the dataset made thoughtful data cleaning and feature engineering essential before any meaningful analysis could begin. The final deliverable was a two-page Power BI dashboard uncovering borough-level demand patterns, agency resolution performance, and the complaint types with the longest average resolution times. This project gave me practical experience translating a messy real-world dataset into a polished business intelligence product.</p>
+                <div class="embed-container">
+                    <img src="nyc311-page1.png" alt="NYC 311 Service Request Dashboard - Page 1" style="width:100%;display:block;border-radius:var(--radius) var(--radius) 0 0;">
+                    <img src="nyc311-page2.png" alt="NYC 311 Service Request Dashboard - Page 2" style="width:100%;display:block;border-top:1px solid hsl(var(--border));border-radius:0 0 var(--radius) var(--radius);">
+                </div>
+            </section>
+
+            <section>
+                <h2>Video Game Data Analysis & Recommendation Model</h2>
+                <p>In this project, I built a machine learning pipeline to recommend similar video game titles and predict critic score ratings based on user input. I preprocessed a video game sales dataset by standardizing and encoding features across platform, genre, sales figures, and critic scores to prepare clean inputs for modeling. Through iterative feature engineering and model tuning, I improved prediction accuracy by 25%, demonstrating how thoughtful data preparation directly impacts model performance.</p>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Standardized Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-actions">
+                <a href="https://www.linkedin.com/in/arfan-rasheed-7197b32a2" target="_blank" rel="noopener noreferrer">
+                    <img src="linkedin-logo.png" alt="LinkedIn Logo" class="social-logo"> Connect on LinkedIn
+                </a>
+                <a href="https://github.com/ArfanRasheed" target="_blank" rel="noopener noreferrer">
+                    <img src="github-logo.png" alt="GitHub Logo" class="social-logo"> View on GitHub
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
